@@ -491,7 +491,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: end;
-
 }
 
 #emojis-sect7 {
@@ -857,10 +856,6 @@ section {
         width: 100%;
         height: 100vh;
     }
-
-    #content8Div{
-        margin-top: 50%;
-    }
     
     /* Section 7 */
 
@@ -871,18 +866,14 @@ section {
         height: 30%;
         margin: 0 10%;
         font-size: 1.8rem;
+        margin-top: 10%;
     }
-    
     .text1-sect7 {
-        padding-top: 40%;
+        padding: 0;
     }
-
     .text1-sect7B {
         align-self: normal;
-        margin-top: 55vh;
-        margin-bottom: 10px;
     }
-
     #emojis-7 {
         width: 40%;
     }
@@ -1244,11 +1235,9 @@ section {
         padding:0;
     }
     #mano{
-        margin: 10rem;
+        margin: 0;
     }
-    #mano2{
-        padding-top: 5rem;
-    }
+
     #emojis-sect7 {
         padding-left: 25%;
         width: 100%;
@@ -1335,17 +1324,30 @@ section {
     }
 
     #message1 {
-        width: 75%;
+        width: 80%;
     }
 
     #message2 {
-        width: 65%;
+        width: 75%;
     }
 
     #message23 {
-        width: 50%;
+        width: 55%;
     }
-
+    #pareja-chico{
+        width: 25%;
+        margin-right: 45%;
+    }
+    #pareja-chica{
+        width: 30%;
+    }
+    .corazones-chico{
+        width: 40%;
+        left: 3%;
+    }
+    .corazones-chica{
+        right: 37%;
+    }
     /*Section 4*/
 
     .regalo {
@@ -1508,6 +1510,31 @@ section {
     #pulpo{
         margin-bottom: 28vh;
     }
+    
+    #message1{
+        width: 90%;
+    }
+    #message2{
+        width: 85%;
+    }
+    #message23{
+        width: 70%;
+    }
+    #pareja-chico{
+        width: 30%;
+        margin-right: 45%;
+    }
+    #pareja-chica{
+        width: 35%;
+        margin-left: 45%;
+    }
+    .corazones-chico{
+        bottom: 10%;
+        left: 3%;
+        width: 45%;
+    }
+
+
     /* Section 4 */
     #sec4H2 {
         margin-top: 4rem;
@@ -1547,11 +1574,7 @@ section {
         font-size: 0.75rem;
     }
     .text1-sect7{
-        margin: 0;
-    }
-
-    #content8Div{
-        margin-top: 30%;
+        padding: 0;
     }
 
 }
@@ -1975,6 +1998,7 @@ section {
     .btn9 {
         font-size: 0.9rem;
     }
+
 
 }
 

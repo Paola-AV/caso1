@@ -919,6 +919,12 @@ section {
         width: 50%;
     }
 
+    .content{
+        margin-top: 5rem;
+    }
+    #content6Div{
+        margin-bottom: 10rem;        
+    }
 
     /*Section9*/
 
@@ -969,6 +975,7 @@ section {
     #rojo {
         width: 100%;
     }
+
 
 
 }
@@ -1081,10 +1088,6 @@ section {
     }
 
     /*Section 6*/
-
-    #mano {
-        margin-top: 10rem;
-    }
     .texto-section7{
         font-size: 1.9rem;
     }
@@ -1222,9 +1225,6 @@ section {
         padding: 2rem;
         font-size: 0.8rem;
     }
-    .contenttexto{
-        margin-top: 25%;
-    }
     .texto-section7 {
         margin: 0;
         font-size: 1.1rem;
@@ -1234,13 +1234,15 @@ section {
     #content6Div{
         padding:0;
     }
-    #mano{
-        margin: 0;
-    }
 
     #emojis-sect7 {
         padding-left: 25%;
         width: 100%;
+    }
+
+    #mano,#mano2{
+        width: 100vw;
+        padding-right: 10vw;
     }
 
     /*Section9*/
@@ -1275,6 +1277,16 @@ section {
     .sec9{
         height: 100vh;
     }
+    #mano,#mano2{
+        padding-right: 5vw;
+    }
+    .content{
+        margin-bottom: 0;
+    }
+    #mano1{
+        margin-top: 30%;
+    }
+
 }
 
 @media (max-width: 425px) and (orientation: portrait) {
@@ -1400,10 +1412,6 @@ section {
         width: 60%;
     }
 
-    #mano {
-        margin: 0 0;
-        height: 90%;
-    }
 
     /* Section 7 */
     .texto-section7 {
@@ -1421,15 +1429,12 @@ section {
     #textoSec8 {
         transform: translateY(-2rem);
     }
-    #mano2 {
-        margin: 0 0;
-        height: 90%;
-    }
+/* 
     .content {
         padding: 0;
         margin: 5rem 0 0 0;
         height: 90vh;
-    }
+    } */
     /* Section 9 */
     
     .preguntaH {
@@ -1575,6 +1580,11 @@ section {
     }
     .text1-sect7{
         padding: 0;
+    }
+
+    #mano,#mano2{
+        height: 95vh;
+        padding-top: 5vh;
     }
 
 }

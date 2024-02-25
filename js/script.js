@@ -107,8 +107,16 @@ function cambiarImagen() {
             imagen3.src = '../src/telefono-xs-3.svg';
             imagen4.src = '../src/ri-caso1-xs-p5-fondo.png';
             imagen5.src = '../src/ri-caso1-xs-p5-sombra2.svg';
+            imagen6.src = '../src/Comp-2-xl.gif';
+            imagen7.src = './src/Comp-1-xl.gif';
+        }
+    }
+
+    if (document.documentElement.clientWidth < 550) {
+        if (window.matchMedia("(orientation: portrait)").matches) {
             imagen6.src = '../src/Comp-2.gif';
             imagen7.src = './src/Comp-1.gif';
         }
     }
+
 };

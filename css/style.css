@@ -852,10 +852,9 @@ section {
         margin-top:15%;
     }
 
-    #mano,
-    #mano2 {
-        width: 100%;
-        height: 100vh;
+    #mano, #mano2 {
+        width: 93%;
+        height: 50%;
     }
     
     /* Section 7 */
@@ -934,10 +933,10 @@ section {
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         padding-top: 2rem;
-        height: 110vh;
+        height: 120vh;
     }
 
     .preguntaH {
@@ -959,22 +958,15 @@ section {
         border-radius: 40px;
     }
 
-    #azul {
-        width: 100%;
-    }
-
     #recuadro {
-        width: 90%;
+        width: 70%;
     }
 
     .texto9 {
         padding-top: 2rem;
-        max-width: 85%;
-        font-size: 1.8rem;
-    }
-
-    #rojo {
-        width: 100%;
+        max-width: 55%;
+        font-size: 1.3rem;
+        height: 33%;
     }
 
 
@@ -1292,7 +1284,7 @@ section {
 
 }
 
-@media (max-width: 425px) and (orientation: portrait) {
+@media (max-width: 435px) and (orientation: portrait) {
 
     /* Section 1 */
     #pSection1 {
@@ -1455,7 +1447,8 @@ section {
     }
 
     .texto9 {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
+        height: 41%;
     }
     #recuadro{
         margin-top: 10%;
@@ -1601,6 +1594,9 @@ section {
     /*section 4*/
     .caja-texto {
         width: 79%;
+    }
+    .sec9{
+        height: 130vh;
     }
 }
 @media (max-height: 1024px) and (orientation: landscape) {
@@ -1756,6 +1752,13 @@ section {
         text-align: center;
         width: 30%;
     }
+    /*section 9*/
+    #recuadro {
+        width: 66%;
+    }
+    .texto9 {
+        max-width: 43%;
+    }
 
 }
 
@@ -1823,10 +1826,10 @@ section {
 
     /*sec 9*/
     #recuadro {
-        width: 57%;
+        width: 63%;
     }
     .texto9 {
-        max-width: 40%;
+        max-width: 49%;
     }
 
 }
@@ -1918,12 +1921,13 @@ section {
     .texto9 {
         font-size: 0.6rem;
         padding: 4%;
-        width: 29%;
+        width: 35%;
+        height: 43%;
     }
 
     #recuadro {
         height: 100%;
-        width: 33%;
+        width: 40%;
     }
 }
 

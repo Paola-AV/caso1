@@ -90,32 +90,32 @@ function cambiarImagen() {
     var imagen6 = document.getElementById('mano');
     var imagen7 = document.getElementById('mano2');
 
-    imagen.src = './src/c1-p2-manos.svg';
-    imagen1.src = './src/boy.svg';
-    imagen2.src = './src/girl.svg';
-    imagen3.src = './src/c1-p4-celular.svg';
-    imagen4.src = './src/fondo-cuarto1.svg';
-    imagen5.src = './src/fondo-cuarto2.svg';
-    imagen6.src = './src/2.gif';
-    imagen7.src = './src/1.gif';
+    imagen.src = 'src/c1-p2-manos.svg';
+    imagen1.src = 'src/boy.svg';
+    imagen2.src = 'src/girl.svg';
+    imagen3.src = 'src/c1-p4-celular.svg';
+    imagen4.src = 'src/fondo-cuarto1.svg';
+    imagen5.src = 'src/fondo-cuarto2.svg';
+    imagen6.src = 'src/2.gif';
+    imagen7.src = 'src/1.gif';
 
     if (document.documentElement.clientWidth < 1025) {
         if (window.matchMedia("(orientation: portrait)").matches) {
-            imagen.src = '../src/xs-p2-manos_cel.svg';
-            imagen1.src = '../src/ri-caso1-xs-p3-chico-silueta.svg';
-            imagen2.src = '../src/ri-caso1-xs-p3-chica-silueta.svg';
-            imagen3.src = '../src/telefono-xs-3.svg';
-            imagen4.src = '../src/ri-caso1-xs-p5-fondo.png';
-            imagen5.src = '../src/ri-caso1-xs-p5-sombra2.svg';
-            imagen6.src = '../src/Comp-2-xl.gif';
-            imagen7.src = './src/Comp-1-xl.gif';
+            imagen.src = 'src/xs-p2-manos_cel.svg';
+            imagen1.src = 'src/ri-caso1-xs-p3-chico-silueta.svg';
+            imagen2.src = 'src/ri-caso1-xs-p3-chica-silueta.svg';
+            imagen3.src = 'src/telefono-xs-3.svg';
+            imagen4.src = 'src/ri-caso1-xs-p5-fondo.png';
+            imagen5.src = 'src/ri-caso1-xs-p5-sombra2.svg';
+            imagen6.src = 'src/Comp-2-xl.gif';
+            imagen7.src = 'src/Comp-1-xl.gif';
         }
     }
 
     if (document.documentElement.clientWidth < 550) {
         if (window.matchMedia("(orientation: portrait)").matches) {
-            imagen6.src = '../src/Comp-2.gif';
-            imagen7.src = './src/Comp-1.gif';
+            imagen6.src = 'src/Comp-2.gif';
+            imagen7.src = 'src/Comp-1.gif';
         }
     }
 

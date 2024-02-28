@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Evento de desplazamiento
     window.addEventListener('scroll', function () {
-        console.log(window.scrollY);
+
 
         // Calcula el factor de escala en función del desplazamiento
         var scale = 2 - 0.01 * window.scrollY;

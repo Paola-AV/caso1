@@ -317,7 +317,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../src/p7-fondo_completo.svg') center/cover no-repeat;
+    background: url('../src/p7FondoCompleto.svg') center/cover no-repeat;
     z-index: -1;
 }
 
@@ -371,6 +371,7 @@ section {
     align-self: center;
     width: 80%;
     height: auto;
+    display: grid;
 }
 
 #mano-cel-izquierda {
@@ -1225,12 +1226,13 @@ section {
         padding: 2rem;
         font-size: 0.8rem;
     }
+    /*section 6*/
     .texto-section7 {
         margin: 0;
         font-size: 1.1rem;
         width: 80%;
     }
-
+  
     #content6Div{
         padding:0;
     }
@@ -1279,6 +1281,7 @@ section {
     }
     #mano,#mano2{
         padding-right: 5vw;
+        height: 79%;
     }
     .content{
         margin-bottom: 0;
@@ -1477,6 +1480,9 @@ section {
     #recuadro{
         margin-top: 0%;
     }
+    #mano,#mano2{
+        height: 93%;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1583,7 +1589,6 @@ section {
     }
 
     #mano,#mano2{
-        height: 95vh;
         padding-top: 5vh;
     }
 
@@ -1592,6 +1597,12 @@ section {
 /* MediaQ altura */
 
 /* "orientation: landscape" para saber si el dispositivo esta volteado */
+@media (max-width: 1400px) and (orientation: landscape){
+    /*section 4*/
+    .caja-texto {
+        width: 79%;
+    }
+}
 @media (max-height: 1024px) and (orientation: landscape) {
 
 
@@ -1709,7 +1720,7 @@ section {
     }
 
     .caja-texto {
-        width: 90%;
+        width: 79%;
         padding: 20px 20px;
         margin-top: 3rem;
         margin-bottom: 1rem;
@@ -1793,7 +1804,7 @@ section {
 
     .caja-texto {
         padding: 10px;
-        width: 90%;
+        width: 78%;
         margin-bottom: 0rem;
         font-size: 1.5rem;
         top: 70%;
@@ -1810,6 +1821,13 @@ section {
         min-width: 16%
     }
 
+    /*sec 9*/
+    #recuadro {
+        width: 57%;
+    }
+    .texto9 {
+        max-width: 40%;
+    }
 
 }
 
@@ -1876,6 +1894,21 @@ section {
     .texto-sec6 {
         left: 47.5%;
     }
+    .content {
+        height: 110vh;
+    }
+    #mano-cel-izquierda {
+        height: auto;
+        width: 76%;
+        justify-self: center;
+    }
+    .text1-sect7 {
+        font-size: 1.1rem;
+    }
+    .text1-sect7B {
+        font-size: 1.1rem;
+    }
+
 
     /* Section 9 */
     .preguntaH {
@@ -1885,6 +1918,7 @@ section {
     .texto9 {
         font-size: 0.6rem;
         padding: 4%;
+        width: 29%;
     }
 
     #recuadro {

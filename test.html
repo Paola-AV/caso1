@@ -137,7 +137,7 @@
 
         <div class="content content6" id="content8Div">
 
-            <img class="img" id="mano2" src="./src/1.gif" alt="" style="visibility: hidden;">
+            <img class="img" id="mano2" src="./src/1.gif" alt="" style="display: none;">
 
 
         </div>
@@ -224,14 +224,12 @@
             } else{
                 size=920;
             }
-            console.log("innerwidth")
-            console.log(anchoVentana)
-            console.log("size:"+size)
             
 
             // Si el elemento está en el área visible de la ventana, agrega la clase, de lo contrario, quítala
             if (posicion <= alturaVentana - size) {
                 mano.classList.add('fadeOut');
+                mano2.style.display = "none";
                 setTimeout(() => {
                     mano1.style.display = "flex";
                     mano1.classList.add('fadeIn');
@@ -240,13 +238,13 @@
             else {
                 mano.classList.remove('fadeOut');
                 mano1.style.display = "none";
-                mano2.style.visibility = "hidden";
+                mano2.style.display = "none";
             }
 
             if (posicion1 <= alturaVentana - 580) {
                 mano1.classList.add('fadeOut');
                 setTimeout(() => {
-                    mano2.style.visibility = "visible;"
+                    mano2.style.display = "grid";
                     mano2.classList.add('fadeIn');
 
                 }, 800);

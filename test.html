@@ -340,15 +340,6 @@
                     content.style.transition = 'background-image 2s ease-out, opacity 0.5s ease-in-out';
                     // // content.style.backgroundImage = "url('./src/bg-2.svg')";
 
-                    setTimeout(() => {
-                        imagen.src = '../src/c1-p2-manos.svg';
-                        if (document.documentElement.clientWidth < 1025) {
-                            if (window.matchMedia("(orientation: portrait)").matches) {
-                                imagen.src = '../src/xs-p2-manos_cel.svg';
-                            }
-                        }
-                    }, 1500);
-
                     content.style.opacity = 1;
                 }
             });

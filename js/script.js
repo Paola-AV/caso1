@@ -90,7 +90,6 @@ function cambiarImagen() {
     var imagen6 = document.getElementById('mano');
     var imagen7 = document.getElementById('mano2');
 
-    imagen.src = 'src/c1-p2-manos.svg';
     imagen1.src = 'src/boy.svg';
     imagen2.src = 'src/girl.svg';
     imagen3.src = 'src/c1-p4-celular.svg';
@@ -101,7 +100,6 @@ function cambiarImagen() {
 
     if (document.documentElement.clientWidth < 1025) {
         if (window.matchMedia("(orientation: portrait)").matches) {
-            imagen.src = 'src/xs-p2-manos_cel.svg';
             imagen1.src = 'src/ri-caso1-xs-p3-chico-silueta.svg';
             imagen2.src = 'src/ri-caso1-xs-p3-chica-silueta.svg';
             imagen3.src = 'src/telefono-xs-3.svg';

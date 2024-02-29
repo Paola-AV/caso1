@@ -117,6 +117,16 @@ section {
     transition-duration: 0.5s;
     z-index: 11;
 }
+.manos-game1{
+    display: none;
+    width: 80%;
+    height: auto;
+    position: relative;
+    align-self: flex-end;
+    /*transform: translateY(80rem);*/
+    transition-duration: 0.5s;
+    z-index: 11;
+}
 
 .mision-cumplida {
     position: absolute;
@@ -690,6 +700,9 @@ section {
     .manos-game {
         width: 100%;
     }
+    .manos-game1 {
+        width: 100%;
+    }
 
     .mision-cumplida {
         margin-bottom: 46vh;
@@ -1151,6 +1164,9 @@ section {
     .manos-game {
         position: relative;
     }
+    .manos-game1 {
+        position: relative;
+    }
 
     .icon1 {
         width: 85px;
@@ -1324,7 +1340,12 @@ section {
     }
 
     /* Section 2 */
-
+.manos-game{
+    display: none;
+}
+.manos-game1{
+    display: grid;
+}
     .icon1 {
         width: 65px;
     }
@@ -1655,6 +1676,9 @@ section {
 
     /*Section 2*/
     .manos-game {
+        width: 80%;
+    }
+    .manos-game1 {
         width: 80%;
     }
 
@@ -1993,6 +2017,9 @@ section {
     }
 
     .manos-game {
+        width: 70%;
+    }
+    .manos-game1 {
         width: 70%;
     }
 

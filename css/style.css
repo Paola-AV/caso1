@@ -699,9 +699,11 @@ section {
 
     .manos-game {
         width: 100%;
+        display: none;
     }
     .manos-game1 {
         width: 100%;
+        display: grid;
     }
 
     .mision-cumplida {
@@ -1459,6 +1461,9 @@ section {
     .mensajeSec6 {
         width: 60%;
     }
+    #content6Div {
+        margin-bottom: 0rem;
+    }
 
 
     /* Section 7 */
@@ -1468,6 +1473,12 @@ section {
 
     #emojis-7 {
         width: 100px;
+    }
+    .contenttexto {
+        height: 50vh
+    }
+    #mano-cel-izquierda {
+     align-self: start; 
     }
     /* Section8 */
     #content8Div{
@@ -1532,6 +1543,12 @@ section {
     #recuadro1{
         display: grid;
         width: 96%;
+    }
+    .contenttexto {
+        height: 105vh;
+    }
+    #mano-cel-izquierda {
+        align-self: center;
     }
 }
 
@@ -1654,6 +1671,11 @@ section {
     }
     .sec9{
         height: 130vh;
+    }
+}
+@media (max-width:1280px) and (orientation: landscape){
+    .content {
+        height: 119vh;
     }
 }
 @media (max-height: 1024px) and (max-width:1280px) and (orientation: landscape) {

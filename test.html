@@ -224,12 +224,16 @@
             } else{
                 size=920;
             }
-            
-
+            if(anchoVentana<=1024 && alturaVentana>anchoVentana){
+                size=1700;
+            }
+            console.log(size+"size")
+            if(anchoVentana<=500){
+                size=920;
+            } 
             // Si el elemento está en el área visible de la ventana, agrega la clase, de lo contrario, quítala
             if (posicion <= alturaVentana - size) {
                 mano.classList.add('fadeOut');
-                mano2.style.display = "none";
                 setTimeout(() => {
                     mano1.style.display = "flex";
                     mano1.classList.add('fadeIn');
@@ -238,7 +242,6 @@
             else {
                 mano.classList.remove('fadeOut');
                 mano1.style.display = "none";
-                mano2.style.display = "none";
             }
 
             if (posicion1 <= alturaVentana - 580) {

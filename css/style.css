@@ -1782,6 +1782,9 @@ section {
     .mensajeSec {
         width: 90%;
     }
+    #mano, #mano2{
+        width: 100%;
+    }
 
     /*section 7*/
      .texto-section7 {

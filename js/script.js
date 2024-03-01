@@ -95,7 +95,7 @@ function cambiarImagen() {
     imagen3.src = 'src/c1-p4-celular.svg';
     imagen4.src = 'src/fondo-cuarto1.svg';
     imagen5.src = 'src/fondo-cuarto2.svg';
-    imagen6.src = 'src/2.gif';
+    imagen6.src = 'src/gifFull.gif';
     imagen7.src = 'src/1.gif';
 
     if (document.documentElement.clientWidth < 1025) {
@@ -105,14 +105,14 @@ function cambiarImagen() {
             imagen3.src = 'src/telefono-xs-3.svg';
             imagen4.src = 'src/ri-caso1-xs-p5-fondo.png';
             imagen5.src = 'src/ri-caso1-xs-p5-sombra2.svg';
-            imagen6.src = 'src/Comp-2-xl.gif';
+            imagen6.src = 'src/mano6recorte.gif';
             imagen7.src = 'src/Comp-1-xl.gif';
         }
     }
 
     if (document.documentElement.clientWidth < 550) {
         if (window.matchMedia("(orientation: portrait)").matches) {
-            imagen6.src = 'src/Comp-2.gif';
+            imagen6.src = 'src/mano6recorte.gif';
             imagen7.src = 'src/Comp-1.gif';
         }
     }

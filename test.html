@@ -20,7 +20,7 @@
         <section class="section1">
 
             <img class="corazon" id="corazon" src="./src/p1-corazon-nuevo.svg" alt="">
-            
+
             <p class="" id="pSection1"><span>Cami (14 años)</span> y <span>Sebas (19 años)</span> se encontraron en
                 línea y
                 desde entonces
@@ -63,8 +63,7 @@
             </div>
 
         </div>
-        <img class="pareja" id="pareja-chica" 
-            src="./src/girl.svg" alt="">
+        <img class="pareja" id="pareja-chica" src="./src/girl.svg" alt="">
         <img class="corazones-chica" src="./src/ri-caso1-xs-p3-chica-corazones.svg" style="">
 
     </section>
@@ -106,7 +105,7 @@
         </div>
 
         <div class="contenttexto" id="mano1" style="display: none;">
-            
+
             <div class="imgSec7">
                 <img id="mano-cel-izquierda" src="./src/ManosJuntas.svg">
             </div>
@@ -130,7 +129,7 @@
                 </div>
 
             </div>
-            
+
 
 
         </div>
@@ -219,20 +218,20 @@
             // Obtener la posición del elemento respecto a la ventana
             var alturaVentana = window.innerHeight;
             var anchoVentana = window.innerWidth;
-            var size=0;
+            var size = 0;
 
-            if(anchoVentana<=768){
-                size=860;
-            } else{
-                size=920;
+            if (anchoVentana <= 768) {
+                size = 860;
+            } else {
+                size = 920;
             }
-            if(anchoVentana<=1024 && alturaVentana>anchoVentana){
-                size=1700;
+            if (anchoVentana <= 1024 && alturaVentana > anchoVentana) {
+                size = 1700;
             }
-            console.log(size+"size")
-            if(anchoVentana<=500){
-                size=920;
-            } 
+            console.log(size + "size")
+            if (anchoVentana <= 500) {
+                size = 920;
+            }
             // Si el elemento está en el área visible de la ventana, agrega la clase, de lo contrario, quítala
             if (posicion <= alturaVentana - size) {
                 mano.classList.add('fadeOut');
@@ -350,4 +349,3 @@
 </body>
 
 </html>
-

@@ -316,9 +316,6 @@ section {
     margin: 0;
     padding: 0;
     display: grid;
-
-
-
 }
 
 .background {
@@ -1884,7 +1881,7 @@ section {
 
     /* section 4 */
     #sec4H2 {
-        margin-top: 13rem;
+        margin-top: 2rem;
         top: 0;
         width: 70%;
         font-size: 3rem;

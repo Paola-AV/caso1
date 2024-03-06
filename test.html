@@ -86,8 +86,8 @@
         <img id="room1" src="./src/fondo-cuarto1.svg" class="room1">
         <img id="room2" src="./src/fondo-cuarto2.svg" class="room2 lax lax_preset_fadeInOut:500:0">
 
-        <div id="texto-section5" data-aos="zoom-out" data-aos-duration="400" data-aos-delay="1000"
-            class="lax lax_preset_scaleIn:700:0">
+        <div id="texto-section5" data-aos="zoom-out" data-aos-duration="400" data-aos-delay="300"
+            >
             <p>¡Con los días, Sebas le pidió el número de teléfono a Cami y comenzaron a hablar por WhatsApp! 📱 La
                 conexión que tenían en el juego se extendió más allá de la pantalla, y la diversión continuó en cada
                 mensaje que compartían 🌟
@@ -132,22 +132,33 @@
             </div>
 
 
-
+        </div>
+        
+        <div class="divSec7Alarma">
+            <div class="alarma7" >
+                <img src="./src/red_flag.svg" class="redFlag7">
+                <p class="alarma7txt">Manipulación</p>
+            </div>
         </div>
 
         <div class="content content6" id="content8Div">
 
             <img class="img" id="mano2" src="./src/1.gif" alt="" style="display: none;">
-
+    
+                <div class="alarma8" >
+                    <img src="./src/red_flag.svg" class="redFlag8">
+                    <p class="alarma8txt">Chantaje</p>
+                </div>
 
         </div>
+       
     </div>
 
 
 
     <!--*****seccion de preguntas*****-->
     <!--seccion 9 -->
-    <section class="sec9 vertical-section">
+    <section class="sec9 vertical-section" id="sec9">
         <h1 class="preguntaH">¿Qué le recomendarías a Cami?</h1>
         <div class="buttonsDiv" id="pregunta">
             <button class="btn9" onclick="mostrarRespuesta('azul')">¡Ojo! Sebas es mayor, y te está
@@ -157,8 +168,8 @@
         </div>
         <div id="azul" class="respuesta-div" style="display: none;">
             <img id="recuadro" src="./src/Bien.svg">
-            <img id="recuadro1" src="./src/BienMobile2.svg">
-            <div class="texto9">
+            <img id="recuadro1" src="./src/BienMobile7.svg">
+            <div class="texto9" id="texto91">
                 <div class="subTexto9">
                     <p>¡Ajá! Las actitudes de Sebas no son sanas para Cami.</p>
                     <img id="icon29" src="./src/incorrecto-bandera.svg">
@@ -190,9 +201,9 @@
 
         <div id="rojo" class="respuesta-div" style="display: none;">
             <img id="recuadro" src="./src/Mal.svg">
-            <img id="recuadro1" src="./src/MalMobile.svg">
-            <div class="texto9">
-                <div class="subTexto9">
+            <img id="recuadro1" src="./src/malMobile3.svg">
+            <div class="texto9" id="texto92">
+                <div class="subTexto9" >
                     <p>¡Ojo! A pesar de la diferencia de edad, Cami no debería sentirse presionada a enviarle nudes
                         (fotos con contenido íntimo) a Sebas.</p>
                     <img id="icon29" src="./src/incorrecto-bandera.svg">
@@ -286,24 +297,40 @@
 
     <script>
         function mostrarRespuesta(color) {
+            var anchoVentana = window.innerWidth;
+            var sec9 = document.getElementById("sec9");
             document.getElementById("volverBtn").style.display = "block";
             // Mostrar la respuesta correspondiente
             if (color === "azul") {
                 document.getElementById("azul").style.display = "grid";
+               if(anchoVentana<=435){
+                sec9.style.height="120vh";
+               }
+               if(anchoVentana<=375){
+                sec9.style.height="145vh";
+               }
             }
             if (color === "rojo") {
                 document.getElementById("rojo").style.display = "grid";
+                if(anchoVentana<=435){
+                sec9.style.height="120vh";
+               }
+               if(anchoVentana<=375){
+                sec9.style.height="145vh";
+               }
             }
 
             // Ocultar la sección de la pregunta
             document.getElementById("pregunta").style.display = "none";
-
+            
         }
 
     </script>
 
     <script>
         function volverPregunta() {
+            var anchoVentana = window.innerWidth;
+            var sec9 = document.getElementById("sec9");
             // Mostrar la sección de la pregunta
             document.getElementById("pregunta").style.display = "block";
 
@@ -313,6 +340,9 @@
 
             // Ocultar el botón de volver
             document.getElementById("volverBtn").style.display = "none";
+            if(anchoVentana<=435){
+                sec9.style.height="110vh";
+               }
         }
 
     </script>

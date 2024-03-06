@@ -113,7 +113,7 @@ function cambiarImagen() {
     if (document.documentElement.clientWidth < 550) {
         if (window.matchMedia("(orientation: portrait)").matches) {
             imagen6.src = 'src/mano6recorte.gif';
-            imagen7.src = 'src/Comp-1.gif';
+            imagen7.src = 'src/Comp-2.gif';
         }
     }
 

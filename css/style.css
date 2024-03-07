@@ -1643,6 +1643,8 @@ section {
     .texto-section7 {
         font-size: 0.9rem;
         height: 77%;
+        padding-left: 5rem;
+        transform: translateY(-2rem);
     }
 
     #emojis-7 {

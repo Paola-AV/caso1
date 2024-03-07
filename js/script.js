@@ -34,38 +34,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-(function(){
+(function () {
     init();
 
     var g_containerInViewport;
-    function init(){
+    function init() {
         setStickyContainersSize();
         bindEvents();
     }
 
-    function bindEvents(){
-        window.addEventListener("wheel", wheelHandler);        
+    function bindEvents() {
+        window.addEventListener("wheel", wheelHandler);
     }
 
-    function setStickyContainersSize(){
-        document.querySelectorAll('.sticky-container').forEach(function(container){
+    function setStickyContainersSize() {
+        document.querySelectorAll('.sticky-container').forEach(function (container) {
             const stikyContainerHeight = container.querySelector('main').scrollWidth;
             container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
         });
     }
 
-    function isElementInViewport (el) {
+    function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
         return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
     }
 
-    function wheelHandler(evt){
-        
-        const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function(container){
+    function wheelHandler(evt) {
+
+        const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function (container) {
             return isElementInViewport(container);
         })[0];
 
-        if(!containerInViewPort){
+        if (!containerInViewPort) {
             return;
         }
 
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
         let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
 
-        if(g_canScrollHorizontally){
+        if (g_canScrollHorizontally) {
             containerInViewPort.querySelector('main').scrollLeft += evt.deltaY;
         }
     }
@@ -105,7 +105,7 @@ function cambiarImagen() {
             imagen3.src = 'src/telefono-xs-3.svg';
             imagen4.src = 'src/ri-caso1-xs-p5-fondo.png';
             imagen5.src = 'src/ri-caso1-xs-p5-sombra2.svg';
-            imagen6.src = 'src/mano6recorte.gif';
+            imagen6.src = 'src/gifFull.gif';
             imagen7.src = 'src/Comp-1-xl.gif';
         }
     }

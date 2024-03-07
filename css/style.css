@@ -385,7 +385,8 @@ section {
 
 #mano-cel-izquierda {
     height: auto;
-    width: 100%;
+    width: 84%;
+    justify-self: center;
 }
 
 /*section 6*/
@@ -769,6 +770,17 @@ section {
     .texto9{
         font-size: 1rem;
         height: 38%;
+    }
+    .text1-sect7 {
+        padding-top: 0rem;
+    }
+    .divSec7Alarma {
+        padding-top: 6rem;
+    }
+    #mano-cel-izquierda {
+        width: 74%;
+        justify-self: center;
+        transform: translateY(-1rem);
     }
 }
 @media (max-width: 1024px) and (orientation: landscape) {
@@ -1912,8 +1924,8 @@ section {
 
     /*sec 7*/
     .texto-section7 {
-        width: 29%;
-        transform: translateY(-1rem);
+        width: 21%;
+        transform: translateY(0rem);
     }
 
     .content {
@@ -2337,7 +2349,9 @@ section {
         min-width: 16%
     }
 
-
+    .alarma7 {
+       transform: translateY(2rem);
+    }
     /*sec 9*/
     .sec9{
         height: 140vh;

@@ -304,6 +304,9 @@
             // Mostrar la respuesta correspondiente
             if (color === "azul") {
                 document.getElementById("azul").style.display = "grid";
+                if (anchoVentana <= 820) {
+                    sec9.style.height = "130vh";
+                }
                 if (anchoVentana <= 435) {
                     sec9.style.height = "120vh";
                 }
@@ -313,6 +316,9 @@
             }
             if (color === "rojo") {
                 document.getElementById("rojo").style.display = "grid";
+                if (anchoVentana <= 820) {
+                    sec9.style.height = "130vh";
+                }
                 if (anchoVentana <= 435) {
                     sec9.style.height = "120vh";
                 }
@@ -341,7 +347,10 @@
 
             // Ocultar el botón de volver
             document.getElementById("volverBtn").style.display = "none";
-            if (anchoVentana <= 435) {
+            if (anchoVentana <= 1300) {
+                sec9.style.height = "140vh";
+            }
+            if (anchoVentana <= 820) {
                 sec9.style.height = "110vh";
             }
         }

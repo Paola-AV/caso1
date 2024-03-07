@@ -341,7 +341,7 @@ section {
 .content {
     display: grid;
     justify-content: center;
-    height: 100vh;
+    height: 110vh;
     padding: 0rem;
     padding-bottom: 0;
 
@@ -730,7 +730,7 @@ section {
     font-weight: 600;
     display: flex;
     padding: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     flex-direction: column;
     height: 55%;
 }
@@ -765,8 +765,18 @@ section {
     align-self: flex-end;
 }
 
-
-
+@media (max-width: 1950px) and (orientation: landscape) {
+    .texto9{
+        font-size: 1rem;
+        height: 38%;
+    }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+    .texto9{
+        font-size: 1rem;
+        height: 64%;
+    }
+}
 @media (max-width: 1024px) and (orientation: portrait) {
 
     /* Section 1 */
@@ -1102,7 +1112,7 @@ section {
     .texto9 {
         padding-top: 2rem;
         width: 55%;
-        font-size: 1.3rem;
+        font-size: 1rem;
         height: 33%;
     }
 
@@ -1111,6 +1121,7 @@ section {
 }
 
 @media (max-width: 820px) and (orientation: portrait) {
+    
     .texto-section7 {
         transform: translateY(-30rem);
     }
@@ -1118,12 +1129,12 @@ section {
     #recuadro {
         width: 85%;
     }
-
+   
     .texto9 {
         padding-top: 2rem;
         width: 60%;
-        font-size: 1.3rem;
-        height: 44%;
+        font-size: 1rem;
+        height: 41%;
     }
 
     .alarma7 {
@@ -1276,7 +1287,7 @@ section {
     }
 
     .texto9 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #recuadro {
@@ -2260,6 +2271,8 @@ section {
 
 }
 
+
+
 @media (max-height: 768px) and (orientation: landscape) {
 
     /* Section 1 */
@@ -2297,7 +2310,7 @@ section {
 
     /* section 4 */
     #sec4H2 {
-        margin-top: 2rem;
+        margin-top: 10rem;
         top: 0;
         width: 70%;
         font-size: 3rem;
@@ -2324,6 +2337,9 @@ section {
 
 
     /*sec 9*/
+    .sec9{
+        height: 140vh;
+    }
     #recuadro {
         width: 63%;
     }

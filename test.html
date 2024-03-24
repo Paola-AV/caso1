@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
+<body >
 
     <div style="position: relative;">
         <!--seccion 1-->
@@ -96,7 +96,7 @@
 
     <!-- secciones 6-8 -->
 
-    <div class="container6">
+    <div class="container6" id="body">
 
         <div class="background"></div>
         <div class="content content6" id="content6Div">
@@ -105,11 +105,11 @@
 
         <div class="contenttexto" id="mano1" style="display: none;">
 
-            <div class="imgSec7">
+            <div class="imgSec7" id="sec71">
                 <img id="mano-cel-izquierda" src="./src/ManosJuntas.svg">
             </div>
 
-            <div class="texto-section7">
+            <div class="texto-section7" id="sec72">
                 <div class="text1-sect7">
                     <p class="">Cami y Sebas llegaron tener encuentros físicos y luego mantuvieron su relación
                         a distancia. Sebas constantemente le pedía fotos.
@@ -132,11 +132,32 @@
 
             </div>
             <div class="divSec7Alarma">
-                <div class="alarma7">
+                <button class="alarma7" id="alarma7">
                     <img src="./src/red_flag.svg" class="redFlag7">
                     <p class="alarma7txt">Manipulación</p>
+                </button>
+            </div>
+            <div class="carrusel" id="modal" style="display: none;">
+                <div class="slider-wrapper">
+                    <button class="slide-arrow" id="slide-arrow-prev">
+                        <img style="rotate: 180deg; width: 6rem; height: 6rem;" src="./src/flecha.svg">
+                    </button>
+
+                    <ul class="slides-container" id="slides-container">
+                        <li class="slide"><img class="imgCarrousel" src="./src/grooming.jpg"></li>
+                        <li class="slide"><img class="imgCarrousel" src="./src/grooming2.jpg.png"></li>
+                    </ul>
+
+                    <button class="slide-arrow" id="slide-arrow-next">
+                        <img style="width: 6rem; height: 6rem;" src="./src/flecha.svg">
+                    </button>
+
+                </div>
+                <div>
+                    <button class="carruselExBtn" id="modalClose">Regresar a la historia</button>
                 </div>
             </div>
+
 
         </div>
 
@@ -184,15 +205,22 @@
                 <img id="icon39" src="./src/correcto-spider.svg">
                 <p>Recordá:
                     ¡Si vos o una amigx necesitan ayuda, conversá con alguna persona
-                    adulta de confianza o llamá a alguna de estas <a href="https://mequierenomequiere.org/rutas-de-denuncia-cuales-son-las-lineas-de-apoyo-y-de-denuncia/">líneas de apoyo.</a></p>
+                    adulta de confianza o llamá a alguna de estas <a
+                        href="https://mequierenomequiere.org/rutas-de-denuncia-cuales-son-las-lineas-de-apoyo-y-de-denuncia/">líneas
+                        de apoyo.</a></p>
                 <p>Mas Info:</p>
 
                 <ul>
-                    <li>Qué son las relaciones impropias</li>
-                    <li>Leyes</li>
-                    <li>Pasos para denunciar</li>
-                    <li>Delitos relacionados</li>
-                    <li><a href="https://mequierenomequiere.org/relaciones-impropias-2/">Mitos del amor romántico</a></li>
+                    <li><a href="https://mequierenomequiere.org/relaciones-impropias-2/#que-es" target="_blank">Qué son
+                            las relaciones impropias</a></li>
+                    <li><a href="https://mequierenomequiere.org/relaciones-impropias-2/#leyes" target="_blank">Leyes</a>
+                    </li>
+                    <li><a href="https://mequierenomequiere.org/relaciones-impropias-2/#denuncia" target="_blank">Pasos
+                            para denunciar</a></li>
+                    <li><a href="https://mequierenomequiere.org/relaciones-impropias-2/#delitos" target="_blank">Delitos
+                            relacionados</a></li>
+                    <li><a href="https://mequierenomequiere.org/relaciones-impropias-2/" target="_blank">Mitos del amor
+                            romántico</a></li>
                 </ul>
                 <button id="volverBtn" onclick="volverPregunta()">Volver a la pregunta</button>
             </div>
@@ -213,20 +241,28 @@
                 <img id="icon39" src="./src/incorrecto-ico3.svg">
                 <p>Recordá:
                     ¡Si vos o una amigx necesitan ayuda, conversá con alguna persona
-                    adulta de confianza o llamá a alguna de estas <a href="https://mequierenomequiere.org/rutas-de-denuncia-cuales-son-las-lineas-de-apoyo-y-de-denuncia/">líneas de apoyo.</a></p>
+                    adulta de confianza o llamá a alguna de estas <a
+                        href="https://mequierenomequiere.org/rutas-de-denuncia-cuales-son-las-lineas-de-apoyo-y-de-denuncia/">líneas
+                        de apoyo.</a></p>
                 <p>Mas Info:</p>
 
                 <ul>
-                    <li>Qué son las relaciones impropias</li>
-                    <li>Leyes</li>
-                    <li>Pasos para denunciar</li>
-                    <li>Delitos relacionados</li>
-                    <li><a href="https://mequierenomequiere.org/relaciones-impropias-2/">Mitos del amor romántico</a></li>
+                    <li><a href="https://mequierenomequiere.org/relaciones-impropias-2/#que-es" target="_blank">Qué son
+                            las relaciones impropias</a></li>
+                    <li><a href="https://mequierenomequiere.org/relaciones-impropias-2/#leyes" target="_blank">Leyes</a>
+                    </li>
+                    <li><a href="https://mequierenomequiere.org/relaciones-impropias-2/#denuncia" target="_blank">Pasos
+                            para denunciar</a></li>
+                    <li><a href="https://mequierenomequiere.org/relaciones-impropias-2/#delitos" target="_blank">Delitos
+                            relacionados</a></li>
+                    <li><a href="https://mequierenomequiere.org/relaciones-impropias-2/" target="_blank">Mitos del amor
+                            romántico</a></li>
                 </ul>
                 <button id="volverBtn" onclick="volverPregunta()">Volver a la pregunta</button>
             </div>
         </div>
     </section>
+
 
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -237,7 +273,39 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
 
+    <script>
+        // Get the modal
+        var modal = document.getElementById('modal');
 
+        // Get the button that opens the modal
+        var btn = document.getElementById('alarma7');
+
+        // Get the <span> element that closes the modal
+        var close = document.getElementById('modalClose');
+        var body=document.getElementById('body');
+        var elemento1=document.getElementById('sec71');
+        var elemento2=document.getElementById('sec72');
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "flex";
+            console.log("abierto");
+            body.style.backgroundColor="rgba(0,0,0,0.6)";
+            elemento1.style.opacity=0.3;
+            elemento2.style.opacity=0.3;
+            btn.style.opacity=0.3;
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        close.onclick = function () {
+            modal.style.display = "none";
+            elemento1.style.opacity=1;
+            elemento2.style.opacity=1;
+            btn.style.opacity=1;
+            body.style.backgroundColor="rgba(0,0,0,0)";
+        }
+
+    </script>
     <script>
         window.addEventListener('scroll', function () {
 

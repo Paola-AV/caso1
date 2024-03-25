@@ -131,3 +131,30 @@ nextButton.addEventListener("click", (event) => {
     const slideWidth = slide.clientWidth;
     slidesContainer.scrollLeft -= slideWidth;
   });
+
+const slidesContainer1 = document.getElementById("slides-container1");
+const slide1 = document.querySelector(".slide1");
+const prevButton1 = document.getElementById("slide-arrow-prev1");
+const nextButton1 = document.getElementById("slide-arrow-next1");
+nextButton1.addEventListener("click", (event) => {
+    const slideWidth1 = slide1.clientWidth;
+      slidesContainer1.scrollLeft += slideWidth1;
+  });
+  prevButton1.addEventListener("click", () => {
+    const slideWidth1 = slide1.clientWidth;
+    slidesContainer1.scrollLeft -= slideWidth1
+  });
+
+  const slidesContainer2 = document.getElementById("slides-container2");
+  const slide2 = document.querySelector(".slide2");
+  const prevButton2 = document.getElementById("slide-arrow-prev2");
+  const nextButton2 = document.getElementById("slide-arrow-next2");
+  nextButton2.addEventListener("click", (event) => {
+      const slideWidth2 = slide2.clientWidth;
+        slidesContainer2.scrollLeft += slideWidth2;
+    });
+    prevButton2.addEventListener("click", () => {
+      const slideWidth2 = slide2.clientWidth;
+      slidesContainer2.scrollLeft -= slideWidth2
+    });
+  

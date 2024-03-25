@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body >
+<body>
 
     <div style="position: relative;">
         <!--seccion 1-->
@@ -99,8 +99,33 @@
     <div class="container6" id="body">
 
         <div class="background"></div>
-        <div class="content content6" id="content6Div">
+        <div class="content content6" id="content6Div" style="position: relative;">
             <img class="img" id="mano" src="./src/gifFull.gif" alt="">
+            <button class="alarma8" id="alarma6">
+                <img src="./src/red_flag.svg" class="redFlag8">
+                <p class="alarma8txt">Grooming</p>
+            </button>
+
+            <div class="carrusel" id="modal1" style="display: none;">
+                <div class="slider-wrapper">
+                    <button class="slide-arrow" id="slide-arrow-prev">
+                        <img style="rotate: 180deg;" class="arrow" src="./src/flecha.svg">
+                    </button>
+
+                    <ul class="slides-container" id="slides-container">
+                        <li class="slide"><img class="imgCarrousel" src="./src/grooming1.png"></li>
+                        <li class="slide"><img class="imgCarrousel" src="./src/grooming2.png"></li>
+                    </ul>
+
+                    <button class="slide-arrow" id="slide-arrow-next">
+                        <img class="arrow" src="./src/flecha.svg">
+                    </button>
+
+                </div>
+                <div>
+                    <button class="carruselExBtn" id="modalClose1">Regresar a la historia</button>
+                </div>
+            </div>
         </div>
 
         <div class="contenttexto" id="mano1" style="display: none;">
@@ -134,22 +159,28 @@
             <div class="divSec7Alarma">
                 <button class="alarma7" id="alarma7">
                     <img src="./src/red_flag.svg" class="redFlag7">
-                    <p class="alarma7txt">Manipulación</p>
+                    <p class="alarma7txt">Relación impropia</p>
                 </button>
             </div>
+
             <div class="carrusel" id="modal" style="display: none;">
                 <div class="slider-wrapper">
-                    <button class="slide-arrow" id="slide-arrow-prev">
-                        <img style="rotate: 180deg; width: 6rem; height: 6rem;" src="./src/flecha.svg">
+                    <button class="slide-arrow" id="slide-arrow-prev1">
+                        <img style="rotate: 180deg;" class="arrow" src="./src/flecha.svg">
                     </button>
 
-                    <ul class="slides-container" id="slides-container">
-                        <li class="slide"><img class="imgCarrousel" src="./src/grooming.jpg"></li>
-                        <li class="slide"><img class="imgCarrousel" src="./src/grooming2.jpg.png"></li>
+                    <ul class="slides-container" id="slides-container1">
+                        <li class="slide1"><img class="imgCarrousel" src="./src/RI1.png"></li>
+                        <li class="slide1"><img class="imgCarrousel" src="./src/RI2.png"></li>
+                        <li class="slide1"><img class="imgCarrousel" src="./src/RI3.png"></li>
+                        <li class="slide1"><img class="imgCarrousel" src="./src/RI4.png"></li>
+                        <li class="slide1"><img class="imgCarrousel" src="./src/RI5.png"></li>
+                        <li class="slide1"><img class="imgCarrousel" src="./src/RI6.png"></li>
+                        <li class="slide1"><img class="imgCarrousel" src="./src/RI7.png"></li>
                     </ul>
 
-                    <button class="slide-arrow" id="slide-arrow-next">
-                        <img style="width: 6rem; height: 6rem;" src="./src/flecha.svg">
+                    <button class="slide-arrow" id="slide-arrow-next1">
+                        <img class="arrow" src="./src/flecha.svg">
                     </button>
 
                 </div>
@@ -167,11 +198,32 @@
 
             <img class="img" id="mano2" src="./src/1.gif" alt="" style="display: none;">
 
-            <div class="alarma8">
+            <div class="alarma8" id="alarma8">
                 <img src="./src/red_flag.svg" class="redFlag8">
-                <p class="alarma8txt">Chantaje</p>
+                <p class="alarma8txt">Manipulación</p>
             </div>
+            <div class="carrusel" id="modal2" style="display: none;">
+                <div class="slider-wrapper">
+                    <button class="slide-arrow" id="slide-arrow-prev2">
+                        <img style="rotate: 180deg; " class="arrow" src="./src/flecha.svg">
+                    </button>
 
+                    <ul class="slides-container" id="slides-container2">
+                        <li class="slide2"><img class="imgCarrousel" src="./src/M1.jpg"></li>
+                        <li class="slide2"><img class="imgCarrousel" src="./src/M2.jpg"></li>
+                        <li class="slide2"><img class="imgCarrousel" src="./src/M3.jpg"></li>
+                        <li class="slide2"><img class="imgCarrousel" src="./src/M4.jpg"></li>
+                    </ul>
+
+                    <button class="slide-arrow" id="slide-arrow-next2">
+                        <img class="arrow" src="./src/flecha.svg">
+                    </button>
+
+                </div>
+                <div>
+                    <button class="carruselExBtn" id="modalClose2">Regresar a la historia</button>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -276,35 +328,73 @@
     <script>
         // Get the modal
         var modal = document.getElementById('modal');
-
+        var modal1 = document.getElementById('modal1');
+        var modal2 = document.getElementById('modal2');
         // Get the button that opens the modal
         var btn = document.getElementById('alarma7');
+        var btn1 = document.getElementById('alarma6');
+        var btn2 = document.getElementById('alarma8');
 
         // Get the <span> element that closes the modal
-        var close = document.getElementById('modalClose');
-        var body=document.getElementById('body');
-        var elemento1=document.getElementById('sec71');
-        var elemento2=document.getElementById('sec72');
-
+        var modalClose = document.getElementById('modalClose');
+        var close1 = document.getElementById('modalClose1');
+        var close2 = document.getElementById('modalClose2');
+        var body = document.getElementById('body');
+        var elemento1 = document.getElementById('sec71');
+        var elemento2 = document.getElementById('sec72');
+        var elemento3 = document.getElementById('mano');
+        var elemento4 = document.getElementById('mano2');
         // When the user clicks the button, open the modal 
-        btn.onclick = function () {
+       function openModal () {
             modal.style.display = "flex";
             console.log("abierto");
-            body.style.backgroundColor="rgba(0,0,0,0.6)";
-            elemento1.style.opacity=0.3;
-            elemento2.style.opacity=0.3;
-            btn.style.opacity=0.3;
+            body.style.backgroundColor = "rgba(0,0,0,0.6)";
+            elemento1.style.opacity = 0.3;
+            elemento2.style.opacity = 0.3;
+            btn.style.opacity = 0.3;
+        }
+        function openModal1 () {
+            modal1.style.display = "flex";
+            console.log("abierto");
+            body.style.backgroundColor = "rgba(0,0,0,0.6)";
+            elemento3.style.opacity = 0.3;
+            btn1.style.opacity = 0.3;
+        }
+        function openModal2 () {
+            modal2.style.display = "flex";
+            console.log("abierto");
+            body.style.backgroundColor = "rgba(0,0,0,0.6)";
+            elemento4.style.opacity = 0.3;
+            btn2.style.opacity = 0.3;
         }
 
         // When the user clicks on <span> (x), close the modal
-        close.onclick = function () {
+        function closeModal () {
             modal.style.display = "none";
-            elemento1.style.opacity=1;
-            elemento2.style.opacity=1;
-            btn.style.opacity=1;
-            body.style.backgroundColor="rgba(0,0,0,0)";
+            elemento1.style.opacity = 1;
+            elemento2.style.opacity = 1;
+            btn.style.opacity = 1;
+            body.style.backgroundColor = "rgba(0,0,0,0)";
+        }
+        function closeModal1() {
+            modal1.style.display = "none";
+            elemento3.style.opacity = 1;
+            btn1.style.opacity = 1;
+            body.style.backgroundColor = "rgba(0,0,0,0)";
+        }
+        function closeModal2() {
+            modal2.style.display = "none";
+            elemento4.style.opacity = 1;
+            btn2.style.opacity = 1;
+            body.style.backgroundColor = "rgba(0,0,0,0)";
         }
 
+        btn.addEventListener("click", openModal);
+        btn1.addEventListener("click", openModal1);
+        btn2.addEventListener("click", openModal2);
+        modalClose.addEventListener("click",closeModal);
+        close1.addEventListener("click", closeModal1);
+        close2.addEventListener("click", closeModal2);
     </script>
     <script>
         window.addEventListener('scroll', function () {

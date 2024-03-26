@@ -118,43 +118,109 @@ function cambiarImagen() {
     }
 
 };
+document.addEventListener("DOMContentLoaded", function () {
+    let index = 0;
+    const slidesContainer = document.getElementById("slides-container");
+    const slide = document.querySelector(".slide");
+    const prevButton = document.getElementById("slide-arrow-prev");
+    const nextButton = document.getElementById("slide-arrow-next");
+    if (index === 0) {
+        prevButton.style.opacity = 0;
+    }
+    console.log(index)
+    nextButton.addEventListener("click", (event) => {
+        const slideWidth = slide.clientWidth;
+        slidesContainer.scrollLeft += slideWidth;
+        prevButton.style.opacity = 1;
+        index++;
+        console.log(index)
+        if (index > 0) {
+            prevButton.style.opacity = 1;
+        }
+        if (index >= 1) {
+            nextButton.style.opacity = 0;
+        }
+    });
+    prevButton.addEventListener("click", () => {
+        const slideWidth = slide.clientWidth;
+        slidesContainer.scrollLeft -= slideWidth;
+        
+        index--;
+        console.log(index)
+        if (index === 0) {
+            nextButton.style.opacity = 1;
+        }
+        if (index === 0) {
+            prevButton.style.opacity = 0;
+        }
+    });
+});
 
-const slidesContainer = document.getElementById("slides-container");
-const slide = document.querySelector(".slide");
-const prevButton = document.getElementById("slide-arrow-prev");
-const nextButton = document.getElementById("slide-arrow-next");
-nextButton.addEventListener("click", (event) => {
-    const slideWidth = slide.clientWidth;
-      slidesContainer.scrollLeft += slideWidth;
-  });
-  prevButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft -= slideWidth;
-  });
+document.addEventListener("DOMContentLoaded", function () {
+    const slidesContainer1 = document.getElementById("slides-container1");
+    const slide1 = document.querySelector(".slide1");
+    const prevButton1 = document.getElementById("slide-arrow-prev1");
+    let index=0;
+    const nextButton1 = document.getElementById("slide-arrow-next1");
+    if (index === 0) {
+        prevButton1.style.opacity = 0;
+    }
+    nextButton1.addEventListener("click", () => {
+        const slideWidth1 = slide1.clientWidth;
+        slidesContainer1.scrollLeft += slideWidth1;
+        index++;
+        if(index>0){
+            prevButton1.style.opacity=1;
+        }
+        if(index>=6){
+            nextButton1.style.opacity=0;
+        }
+    });
 
-const slidesContainer1 = document.getElementById("slides-container1");
-const slide1 = document.querySelector(".slide1");
-const prevButton1 = document.getElementById("slide-arrow-prev1");
-const nextButton1 = document.getElementById("slide-arrow-next1");
-nextButton1.addEventListener("click", (event) => {
-    const slideWidth1 = slide1.clientWidth;
-      slidesContainer1.scrollLeft += slideWidth1;
-  });
-  prevButton1.addEventListener("click", () => {
-    const slideWidth1 = slide1.clientWidth;
-    slidesContainer1.scrollLeft -= slideWidth1
-  });
+    prevButton1.addEventListener("click", () => {
+        const slideWidth1 = slide1.clientWidth;
+        slidesContainer1.scrollLeft -= slideWidth1;
+        index--;
+        console.log(index)
+        if(index<6){
+            nextButton1.style.opacity=1;
+        }
+        if(index===1){
+            prevButton1.style.opacity=0;
+        }
+    });
+});
 
-  const slidesContainer2 = document.getElementById("slides-container2");
-  const slide2 = document.querySelector(".slide2");
-  const prevButton2 = document.getElementById("slide-arrow-prev2");
-  const nextButton2 = document.getElementById("slide-arrow-next2");
-  nextButton2.addEventListener("click", (event) => {
-      const slideWidth2 = slide2.clientWidth;
+document.addEventListener("DOMContentLoaded", function () {
+    const slidesContainer2 = document.getElementById("slides-container2");
+    const slide2 = document.querySelector(".slide2");
+    const prevButton2 = document.getElementById("slide-arrow-prev2");
+    const nextButton2 = document.getElementById("slide-arrow-next2");
+    let index=0;
+    if (index === 0) {
+        prevButton2.style.opacity = 0;
+    }
+    nextButton2.addEventListener("click", (event) => {
+        const slideWidth2 = slide2.clientWidth;
         slidesContainer2.scrollLeft += slideWidth2;
+        index++;
+        if(index>0){
+            prevButton2.style.opacity=1;
+        }
+        if(index>=3){
+            nextButton2.style.opacity=0;
+        }
     });
     prevButton2.addEventListener("click", () => {
-      const slideWidth2 = slide2.clientWidth;
-      slidesContainer2.scrollLeft -= slideWidth2
+        const slideWidth2 = slide2.clientWidth;
+        slidesContainer2.scrollLeft -= slideWidth2
+        index--;
+        console.log(index)
+        if(index<3){
+            nextButton2.style.opacity=1;
+        }
+        if(index===0){
+            prevButton2.style.opacity=0;
+        }
     });
-  
+});

@@ -766,7 +766,10 @@ section {
 .carruselExBtn{
     padding: 1rem;
     z-index: 1000;
-
+    background-color: #321e40;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
 }
 
 .slider-wrapper {

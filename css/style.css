@@ -766,7 +766,7 @@ section {
 .carruselExBtn{
     padding: 1rem;
     z-index: 1000;
-    background-color: #321e40;
+    background-color: #c057f4;
     border-radius: 10px;
     color: white;
     font-weight: 600;
@@ -828,7 +828,7 @@ section {
     display: flex;
     top: 0;
     bottom: 0;
-    margin: auto;
+    margin: 0;
     height: 4rem;
     border: none;
     width: 2rem;
@@ -845,10 +845,32 @@ section {
   #slide-arrow-prev {
     left: 0;
     background-color: transparent;
+    margin-right: 2.5rem; 
   }
   #slide-arrow-next {
     right: 0;
     background-color: transparent;
+    transform: translateX(-1rem);
+  }
+  #slide-arrow-prev1 {
+    left: 0;
+    background-color: transparent;
+    margin-right: 2.5rem; 
+  }
+  #slide-arrow-next1 {
+    right: 0;
+    background-color: transparent;
+    transform: translateX(-1rem);
+  }
+  #slide-arrow-prev2 {
+    left: 0;
+    background-color: transparent;
+    margin-right: 2.5rem; 
+  }
+  #slide-arrow-next2 {
+    right: 0;
+    background-color: transparent;
+    transform: translateX(-1rem);
   }
 
 @media (max-width: 1950px) and (orientation: landscape) {
@@ -1757,6 +1779,9 @@ section {
     #content6Div {
         margin-bottom: 0rem;
     }
+    #slide-arrow-prev {
+        margin-right: 0rem;
+    }
 
 
     /* Section 7 */
@@ -1786,7 +1811,9 @@ section {
     .alarma7txt {
         font-size: 1rem;
     }
-
+    #slide-arrow-prev1 {
+        margin-right: 0rem;
+    }
     /* Section8 */
     #content8Div {
         margin: 0;
@@ -1802,6 +1829,9 @@ section {
 
     .alarma8txt {
         font-size: 1rem;
+    }
+    #slide-arrow-prev2 {
+        margin-right: 0rem;
     }
 
     /* Section 9 */
